@@ -19,3 +19,237 @@ h3 {
   color: black;
   line-height: 18px;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 55px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* Только для оформления сетки */
+  background-color: #FFFF5C;
+  border: 1px solid blue;
+}
+
+.site-navigation {
+  float: left;
+  width: 780px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.navigation-item li {
+  display: inline-block;
+  width: 110px;
+  vertical-align: top;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+/*.navigation-item li:first-child {
+  width: 160px;
+}
+*/
+.user-block {
+  float: right;
+  width: 140px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+h1 {
+  margin-bottom: 20px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.breadcrumbs {
+  margin-bottom: 55px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.breadcrumbs-site li {
+  display: inline-block;
+  vertical-align: top;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.catalog-nav {
+  float: left;
+  width: 220px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.catalog-gallery {
+  float: right;
+  width: 700px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  /*border: 1px solid blue;*/
+}
+
+.gallery {
+  font-size: 0px;
+  margin-bottom: 25px;
+}
+
+.gallery article {
+  display: inline-block;
+  vertical-align: top;
+}
+
+article {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  /*border: 1px solid green;
+*/}
+
+article:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.pagination li {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  vertical-align: top;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid green;
+}
+
+.product-gallery {
+  float: left;
+  width: 460px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.product-photo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.product-photo:first-child,
+.product-photo:last-child {
+  margin-right: 0px;
+}
+
+.product-desc {
+  float: right;
+  width: 400px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.availability {
+  float: left;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.code {
+  float: right;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.product-code {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.product-benefits {
+  margin-bottom: 40px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.shop-form {
+  margin-bottom: 60px;
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.product-consist {
+  /* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.main-footer {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+/* Только для оформления сетки */
+  background-color: #B7F7B5;
+  border: 1px solid blue;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  /* Только для оформления сетки */
+  background-color: #EDF5F7;
+  border: 1px solid blue;
+}
+
+
