@@ -44,58 +44,62 @@ body {
   padding: 0 10px;
   /* Только для оформления сетки */
   background-color: #FFFF5C;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .site-navigation {
   float: left;
   width: 780px;
+  font-size: 0px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .navigation-item li {
   display: inline-block;
   width: 110px;
   vertical-align: top;
+  font-size: 16px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
-/*.navigation-item li:first-child {
+.navigation-item li:first-child {
   width: 160px;
 }
-*/
+
 .user-block {
   float: right;
   width: 140px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 h1 {
   margin-bottom: 20px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .breadcrumbs {
   margin-bottom: 55px;
+  font-size: 0px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .breadcrumbs-site li {
   display: inline-block;
   vertical-align: top;
+  font-size: 14px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .catalog-nav {
@@ -103,7 +107,7 @@ h1 {
   width: 220px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .catalog-gallery {
@@ -111,7 +115,7 @@ h1 {
   width: 700px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  /*border: 1px solid blue;*/
+  outline: 1px solid blue;
 }
 
 .gallery {
@@ -131,8 +135,8 @@ article {
   font-size: 14px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  /*border: 1px solid green;
-*/}
+  outline: 1px solid green;
+}
 
 article:nth-child(3n) {
   margin-right: 0px;
@@ -146,15 +150,16 @@ article:nth-child(3n) {
   vertical-align: top;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid green;
+  outline: 1px solid green;
 }
 
 .product-gallery {
   float: left;
   width: 460px;
+  font-size: 0px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .product-photo {
@@ -173,21 +178,21 @@ article:nth-child(3n) {
   width: 400px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .availability {
   float: left;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .code {
   float: right;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .product-code {
@@ -195,27 +200,27 @@ article:nth-child(3n) {
   margin-bottom: 35px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .product-benefits {
   margin-bottom: 40px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .shop-form {
   margin-bottom: 60px;
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .product-consist {
   /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .main-footer {
@@ -224,7 +229,7 @@ article:nth-child(3n) {
   padding-bottom: 40px;
 /* Только для оформления сетки */
   background-color: #B7F7B5;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .footer-contacts {
@@ -233,7 +238,7 @@ article:nth-child(3n) {
   margin-right: 60px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .footer-social {
@@ -241,7 +246,7 @@ article:nth-child(3n) {
   width: 180px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .footer-copyright {
@@ -249,7 +254,7 @@ article:nth-child(3n) {
   width: 180px;
   /* Только для оформления сетки */
   background-color: #EDF5F7;
-  border: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 
