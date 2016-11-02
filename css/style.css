@@ -56,6 +56,10 @@ body {
   outline: 1px solid blue;
 }
 
+.navigation-item {
+  padding: 0px;
+}
+
 .navigation-item li {
   display: inline-block;
   width: 110px;
@@ -91,6 +95,10 @@ h1 {
   /* Только для оформления сетки */
   background-color: #EDF5F7;
   outline: 1px solid blue;
+}
+
+.breadcrumbs-site {
+  padding: 0px;
 }
 
 .breadcrumbs-site li {
@@ -142,6 +150,10 @@ article:nth-child(3n) {
   margin-right: 0px;
 }
 
+.pagination {
+  padding: 0px;
+}
+
 .pagination li {
   display: inline-block;
   width: 45px;
@@ -151,6 +163,10 @@ article:nth-child(3n) {
   /* Только для оформления сетки */
   background-color: #B7F7B5;
   outline: 1px solid green;
+}
+
+.product-gallery ul {
+  padding: 0px;
 }
 
 .product-gallery {
@@ -166,6 +182,8 @@ article:nth-child(3n) {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 20px;
+  /* Только для оформления сетки */
+  outline: 1px solid blue;
 }
 
 .product-photo:first-child,
