@@ -1,5 +1,11 @@
 body {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background: #ffffff url("../img/bg-1.png") repeat;
 }
 
 h1 {
@@ -7,13 +13,11 @@ h1 {
   color: black;
   line-height: 42px;
 }
-
 h2 {
   font-size: 24px;
   color: black;
   line-height: 30px;
 }
-
 h3 {
   font-size: 14px;
   color: black;
@@ -32,108 +36,318 @@ body {
   clear: both;
 }
 
-.main-header {
-  margin-bottom: 55px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-}
-
 .container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  /* Только для оформления сетки */
-  background-color: #FFFF5C;
-  outline: 1px solid blue;
 }
 
-.site-navigation {
-  float: left;
-  width: 780px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+.main-header {
+  margin-bottom: 55px;
+  background: #000000;
 }
 
 .logo {
   float: left;
-  width: 160px;
-  margin-right: 0;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.logo img {
+  width: 111px;
+  height: 24px;
+}
+
+.site-navigation {
+  float: left;
+  width: 620px;
+  color: #ffffff;
 }
 
 .navigation-item {
   float: left;
-  font-size: 0;
   padding: 0;
   margin: 0;
+
+  font-size: 0;
+  list-style: none;
 }
 
 .navigation-item li {
   display: inline-block;
-  width: 110px;
   padding: 0;
-  vertical-align: top;
   font-size: 16px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.navigation-item a {
+  display: block;
+  padding: 25px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-item a:hover {
+  background: #242424;
+}
+
+.navigation-item .active {
+  position: relative;
+  display: block;
+}
+
+.navigation-item .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.navigation-item .active:hover {
+  background: none;
 }
 
 .user-block {
   float: right;
-  width: 140px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+  max-width: 140px;
 }
 
-h1 {
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 16px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -74px -10px;
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
+}
+
+.page-title {
+  margin-bottom: 55px;
+}
+
+.page-title h1 {
+  margin: 0;
   margin-bottom: 20px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .breadcrumbs {
-  margin-bottom: 55px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
-}
-
-.breadcrumbs-site {
-  padding: 0;
   margin: 0;
-  font-size: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.breadcrumbs-site li {
-  display: inline-block;
-  padding: 0;
-  vertical-align: top;
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
   font-size: 14px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.catalog {
+  margin-bottom: 52px;
 }
 
 .catalog-nav {
   float: left;
   width: 220px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+  color: #000000;
+}
+
+.catalog-nav h2 {
+  margin-top: 0px;
+  margin-bottom: 34px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.producers-name,
+.products-type {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #f9f6f3;  border: 2px solid #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  background-position: -10px -10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+  background-color: #000000;
+  width: 8px;
+  height: 8px;
+}
+
+.producers-form {
+  margin-bottom: 55px;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 33px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000000;
 }
 
 .catalog-gallery {
   float: right;
   width: 700px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
 }
 
 .gallery {
@@ -142,21 +356,61 @@ h1 {
 }
 
 .catalog-item {
+  position: relative;
   display: inline-block;
   width: 220px;
+  min-height: 305px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0;
   vertical-align: top;
   font-size: 14px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid green;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px 2px #e5e5e5, -1px -1px 10px 2px #e5e5e5;
 }
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
+
+.catalog-item h3 {
+  margin: 16px;
+  padding-bottom: 59px;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.catalog-item a {
+  text-decoration: none;
+}
+
+
+.catalog-item .price,
+.catalog-item .btn {
+  position: absolute;
+  bottom: 16px;
+  min-height: 18px;
+  padding: 12px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalog-item .price {
+  left: 0;
+  width: 111px;
+  margin-left: 16px;
+  margin-right: 0px;
+  color: #000000;
+  background-color: #e5e5e5;
+}
+
+.catalog-item .btn {
+  right: 0;
+  width: 77px;
+  margin-left: 0px;
+}
+
 
 .pagination {
   padding: 0;
@@ -166,24 +420,35 @@ h1 {
 
 .pagination li {
   display: inline-block;
-  width: 45px;
+  min-width: 25px;
   height: 45px;
-  padding: 0;
+  margin-right: 10px;
+  padding: 0 10px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid green;
+  line-height: 45px;
+  background-color: #000000;
 }
+
+.pagination li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination .current {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+/*---Inner Page---*/
 
 .product-gallery {
   float: left;
   width: 460px;
   font-size: 0;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+  margin-bottom: 20px;
 }
 
 .product-gallery ul {
@@ -197,8 +462,7 @@ h1 {
   margin-right: 20px;
   padding: 0;
   vertical-align: top;
-  /* Только для оформления сетки */
-  outline: 1px solid blue;
+  box-shadow: 1px 1px 10px 2px #e5e5e5, -1px -1px 10px 2px #e5e5e5;
 }
 
 .product-photo:first-child,
@@ -209,83 +473,147 @@ h1 {
 .product-desc {
   float: right;
   width: 400px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
 }
 
 .availability {
   float: left;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
 }
 
 .code {
   float: right;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  color: #aba9a7;
 }
 
 .product-code {
-  margin-top: 20px;
   margin-bottom: 35px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
 }
 
 .product-benefits {
   margin-bottom: 40px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+}
+
+.product-consist-list {
+  padding: 0;
+}
+
+.product-consist-list li {
+  position: relative;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.product-consist-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 .shop-form {
   margin-bottom: 60px;
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  font-size: 0;
 }
 
-.product-consist {
-  /* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+.shop-price {
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #e5e5e5;
 }
 
 .main-footer {
-  margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 40px;
-/* Только для оформления сетки */
-  background-color: #B7F7B5;
-  outline: 1px solid blue;
+  color: #ffffff; /* лучше явно прописать везде для футера */
+  background: #232323;
+  box-shadow: inset 0px 30px 40px -15px #000000;
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-contacts a[href^="tel"] {
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
   width: 180px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+  text-align: center;
+}
+
+.social-btn {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  background-color: #000000;
+}
+
+.social-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-vk::before {
+  width: 25px;
+  height: 16px;
+  background-position: -153px -10px;
+}
+
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -112px -10px;
+}
+
+.social-btn-fb::before {
+  width: 10px;
+  height: 19px;
+  background-position: -44px -10px;
 }
 
 .footer-copyright {
   float: right;
   width: 180px;
-  /* Только для оформления сетки */
-  background-color: #EDF5F7;
-  outline: 1px solid blue;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
