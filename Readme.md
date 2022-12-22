@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Aliya Nikiforova](https://up.htmlacademy.ru/htmlcss/15/user/289087).
+* Студент: [Aliya](https://up.htmlacademy.ru/htmlcss/15/user/289087).
 
 ---
 
